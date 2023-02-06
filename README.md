@@ -12,6 +12,8 @@ Link do Preview https://cybernerd007.github.io/consumirapi/
 
 ### 🔩 Configurar
 
+Basta Mudar a URL Abaixo Dentro do `index.html`
+
 | MODO QUE DEVE SER PASSADO A URL | description |
 | --- | --- |
 | https://www.tabnews.com.br/api/v1/contents/{USUARIO}/{SLUG} |  Onde está `{USUARIO}`/`{SLUG}` devera ser substituido, Exemplo: Matrixs0beit/hackthebox-a-plataforma-que-voce-precisa-conhecer-para-estudar-pentest |
