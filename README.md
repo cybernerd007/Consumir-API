@@ -3,9 +3,12 @@
 
 ## 🗺 Preview
 
+Link do Preview https://cybernerd007.github.io/consumirapi/
+
 | Normal | Depois da Consulta |
 | --- | --- |
 | ![](https://user-images.githubusercontent.com/8114976/216854708-71f67088-03ba-4ab3-90f2-108af1403b13.png) | ![](https://user-images.githubusercontent.com/8114976/216854723-2bc12e92-07c6-4345-a0de-400f2267462b.png) |
+
 
 ### 🔩 Configurar
 
