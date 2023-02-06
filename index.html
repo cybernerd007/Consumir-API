@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.min.js" integrity="sha512-JEXkqJItqNp0+qvX53ETuwTLoz/r1Tn5yTRnZWWz0ghMKM2WFCEYLdQnsdcYnryMNANMAnxNcBa/dN7wQtESdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+	
+        function dados(){
+        
+        const options = {
+            method: 'GET',
+            url: 'https://www.tabnews.com.br/api/v1/contents/Matrixs0beit/hackthebox-a-plataforma-que-voce-precisa-conhecer-para-estudar-pentest'
+        };
+
+        axios.request(options).then(function (api){
+            var date = new Date(api.data.created_at);
+            var DataFormatada = date.toLocaleDateString("pt-BR");
+
+            document.getElementById('Titulo').innerHTML = api.data.title;
+            document.getElementById('Usuario').innerHTML = api.data.owner_username;
+            document.getElementById('DataPubli').innerHTML = DataFormatada;
+            document.getElementById('QtComentarios').innerHTML = api.data.children_deep_count;
+            document.getElementById('urlpost').innerHTML = api.data.slug;
+        })
+
+    }
+    </script>
+</head>
+<body>
+    <div class="tudo">
+        <h3 id="Titulo">Titulo</h3>
+        <p id="Usuario">Usuario</p>
+        <p id="DataPubli">Data da Publicação</p>
+        <p id="QtComentarios">Quantos Comentarios</p>
+        <p id="urlpost">Slug</p>
+        <button onclick="dados()">Pegar Dados</button>
+    </div>
+</body>
+</html>
